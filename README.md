@@ -51,7 +51,8 @@ Evaluation metric:
 - NumPy
 - Matplotlib
 - Scikit-learn
-- XGBoost / LightGBM
+- Multi-layer Perceptrons (MLP)
+- Temporal Convolutional Network (TCN)
 
 ---
 
@@ -120,11 +121,26 @@ Generated predictions for future sales periods and evaluated model performance u
 ---
 
 ## Results
+
 - Metric: SMAPE: 13.42%
 - Successfully built an end-to-end time series forecasting pipeline
 - Applied feature engineering techniques for temporal data
 - Generated sales forecasts for multiple stores and products
 - Participated in a Kaggle forecasting competition environment
+
+### Training Performance
+
+The figure below shows:
+- training sMAPE loss over 40 epochs
+- validation sMAPE performance during training
+
+![Training Curves](https://github.com/Grace-VN/sales-forecast/blob/main/images/curves.png)
+
+### Forecast Visualization
+
+The following visualization compares actual and predicted sales values on held-out validation windows for selected store-item combinations.
+
+![Actual vs Predicted](https://github.com/Grace-VN/sales-forecast/blob/main/images/Actual%20v.s.%20Predicted.png)
 
 
 ## Key Learnings
